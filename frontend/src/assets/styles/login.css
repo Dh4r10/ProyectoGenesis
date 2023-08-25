@@ -1,0 +1,392 @@
+/* font-family: 'Almarai', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sigmar', cursive;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Merriweather Sans', sans-serif; */
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 12%;
+  max-height: 110px;
+  padding: 1.3% 0;
+  border-bottom-style: solid;
+  border-color: rgb(70, 184, 12);
+  background: linear-gradient(
+    45deg,
+    rgb(4, 53, 2),
+    rgb(7, 90, 4),
+    rgb(4, 53, 2),
+    rgb(7, 90, 4)
+  );
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  z-index: +1;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.6%;
+}
+
+header h1 {
+  color: rgb(21, 165, 38);
+
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 170%;
+  letter-spacing: 2px;
+}
+
+.unsm {
+  font-family: "Poppins", sans-serif;
+  color: rgb(151, 151, 151);
+}
+
+.encEmo {
+  color: rgb(201, 201, 201);
+}
+
+/* Main */
+
+.cajaLogin {
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 85vh;
+  height: 40vh;
+  max-width: 640px;
+  max-height: 410px;
+  min-height: 388px;
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1.8fr);
+  margin: 0 auto;
+  /* justify-content: center;
+    align-items: center; */
+  border-radius: 15px;
+  margin-bottom: 3%;
+  box-shadow: 0px 0px 15px 1px rgb(42, 42, 42);
+}
+
+.logoLogin {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: grid;
+  grid-template-rows: repeat(1, 2fr 0.7fr 1.3fr);
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.cajaLogo {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.logoLogin img {
+  width: 50%;
+  filter: drop-shadow(0px 20px 40px rgb(27, 27, 27));
+  position: relative;
+  top: 10px;
+}
+
+.cajaIniSes {
+  width: 100%;
+  height: 100%;
+}
+
+.cajaIniSes h1 {
+  font-size: 140%;
+  font-family: "Almarai", sans-serif;
+  color: rgba(255, 255, 255, 0.749);
+  position: relative;
+  top: 12px;
+}
+
+.cajaOlvCont {
+  width: 100%;
+  height: 100%;
+}
+
+.cajaOlvCont h1 {
+  font-size: 60%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.cajaOlvCont a {
+  font-size: 60%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 10px;
+}
+
+.inputsLogin {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+  background-color: rgba(218, 223, 217, 0.665);
+  border-radius: 15px;
+}
+
+.inputsLogin form {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40% 0;
+  display: grid;
+}
+
+.cajaInputs {
+  display: grid;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.cajaInputs input {
+  margin: 0% 3%;
+  height: 35px;
+  width:70%;
+  padding: 0 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 85%;
+  letter-spacing: 1px;
+  border: none;
+  box-shadow: 1px 1px 5px 0.2px rgb(124, 122, 122);
+  outline: none;
+  cursor: pointer;
+  /* transition: 2s all ease-in-out; */
+}
+
+.cajaInputs input::placeholder {
+  color: rgba(3, 3, 3, 0.469);
+}
+
+.inputPassword {
+  position: relative;
+  left: 15px;
+}
+
+.logoInput {
+  color: #109631;
+  width: 30px;
+}
+
+.authentication {
+  position: relative;
+  left: 50px;
+  top: 2px;
+}
+
+.authenticationPassword {
+  position: relative;
+  left: 65px;
+  top: 2px;
+  z-index: +1;
+}
+
+.viewPass {
+  color: #10c23d;
+  width: 30px;
+  position: relative;
+  top: 2px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.logoEye {
+  color: #0e9530;
+  width: 30px;
+}
+
+.btnLogin {
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLogin button {
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(34, 171, 27);
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.btnLogin button:hover {
+  background-color: rgb(5, 105, 2);
+}
+
+/* Footer */
+
+.footerLogin {
+  background-color: rgb(3, 81, 20);
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  align-items: center;
+  justify-content: center;
+  border-top-style: solid;
+  border-color: rgb(70, 184, 12);
+}
+
+.logoFooter {
+  margin-left: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoFooter img {
+  width: 50px;
+  margin: 0 7%;
+}
+
+.textosFooter {
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+
+.textoUNSM{
+  color: rgb(217, 221, 224);
+}
+
+.textoGris {
+  color: rgb(157, 157, 161);
+}
+
+.logoFooter h1 {
+  font-size: 85%;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.redesFooter {
+  margin-right: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 4%;
+}
+
+.redesFooter h1 {
+  font-size: 85%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(138, 138, 143);
+  letter-spacing: 2px;
+  position: relative;
+  top: 3.5px;
+}
+
+.redesFooter a {
+  margin: 0 3%;
+  color: #c9d5c9e8;
+  font-size: 20px;
+}
+
+.warnings {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  font-family: "Varela Round", sans-serif;
+  font-size: 90%;
+  color: #122e13fb;
+  position: relative;
+  bottom: 50px;
+  letter-spacing: 0px;
+}
+
+@media screen and (max-width: 1690px) {
+  .logoFooter {
+    margin-left: 55%;
+  }
+
+  .logoFooter h1 {
+    font-size: 90%;
+  }
+
+  .redesFooter {
+    margin-right: 55%;
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  .logoFooter {
+    margin-left: 50%;
+  }
+
+  .logoFooter h1 {
+    font-size: 85%;
+  }
+
+  .redesFooter {
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .logoFooter {
+    margin-left: 0;
+    min-width: 310px;
+  }
+
+  .logoFooter h1 {
+    font-size: 80%;
+  }
+
+  .redesFooter {
+    margin-right: 0;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  .redesFooter a,
+  .redesFooter h1 {
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .cajaLogin {
+    margin-top: 150px;
+    margin-bottom: 180px;
+  }
+}

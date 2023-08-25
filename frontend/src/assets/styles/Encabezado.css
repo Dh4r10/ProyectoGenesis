@@ -1,0 +1,66 @@
+.encabezado{
+  /* background-color: rgba(239, 236, 236, 0.484); */
+  background-color: rgba(254, 252, 252, 0.692);
+}
+
+.cajaFooterTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.logoHeaderUnsm {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoHeaderGob {
+  width: 15%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoHeaderUnsm img,
+.logoHeaderGob img {
+  width: 60%;
+}
+
+@media screen and (max-width: 1196px) {
+  .cajaFooterTexto h1 {
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logoHeaderUnsm img,
+  .logoHeaderGob img {
+    width: 80%;
+  }
+
+  .cajaFooterTexto h1 {
+    font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoHeaderUnsm img,
+  .logoHeaderGob img {
+    width: 100%;
+  }
+
+  .cajaFooterTexto h1 {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cajaFooterTexto h1 {
+    font-size: 110%;
+  }
+}

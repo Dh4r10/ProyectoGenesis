@@ -1,0 +1,22 @@
+.finalizarCaja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+}
+
+.loadingCaja{
+    text-align: center;
+}
+
+.loadingGif{
+    width: 25%;
+}
+
+.finalizarText{
+    font-size: 18px;
+}
+
+.finalizarTextNone{
+    display: none;
+}
