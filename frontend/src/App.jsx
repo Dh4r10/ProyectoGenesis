@@ -10,6 +10,8 @@ import PrivateRoutes from "./assets/utils/PrivateRoutes";
 
 import { AuthProvider } from "./assets/contexts/AuthContext";
 import { VistaUserProvider } from './assets/contexts/VistaUserContext'
+import PsychologistViewPage from "./assets/pages/PsychologistsView/PsychologistViewPage";
+
 
 function App() {
 
@@ -25,6 +27,9 @@ function App() {
             {/* <Route element={<StudentsViewPage />} path="/" exact /> */}
             <Route element={<LoginPage />} path="/login" />
             {/* <Route element={<LoginPage />} path="*" /> */}
+
+            <Route element={<PsychologistViewPage />} path="/psicologo/*" />
+
           </Routes>
         </VistaUserProvider>
       </AuthProvider>
